@@ -1,0 +1,181 @@
+html {
+    font-size: 16px;
+    color: rgb(244 244 249);
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: .9rem;
+}
+
+article, 
+#skills,
+#projects,
+#contact {
+    background-color: rgb(82 28 184 / .4);
+    border: 2px solid rgb(244 244 249);
+}
+
+body {
+    background-image: url(/PortfolioV1/resources/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(34 34 34);
+    color: rgb(244 244 249);
+    position: fixed;
+    top: 0;
+    padding-left: 30px;
+    z-index: 10;
+    border-bottom: 2px solid rgb(244 244 249);
+}
+
+nav li {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 85px;
+}
+
+main img {
+    max-height: 300px;
+    margin: 5%;
+    border-radius: 200px 200px 0 0;
+    box-shadow: 1rem 1rem 1rem rgb(34 34 34);
+    border: 2px solid rgb(244 244 249);
+}
+
+article {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5%;
+    padding: 25px 45px;
+    border-radius: 4px;
+
+}
+
+article h1 {
+    float: inline-start;
+}
+
+article p {
+    margin-bottom: 20px;
+}
+
+
+.skills_projects {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+#skills {
+    width: 60%;
+    border-radius: 4px;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#skills li {
+    padding: 1px;
+    margin: 10px;
+    display: flex;
+    align-items: inline-start;
+}
+
+#projects {
+    width: 30%;
+}
+
+#contact {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact button {
+    background-color: rgb(244 244 249);
+    color: rgb(34 34 34);
+    border-radius: 4px;
+    padding: 3px 10px;
+    box-shadow: .1rem .1rem .1rem rgb(34 34 34);
+    margin: 10px;
+}
+
+#contact button:hover {
+    background-color: rgb(34 34 34);
+    color: rgb(244 244 249);
+} 
+
+@media only screen and  (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills_projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #skills {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+        #projects {
+        width: 60%;
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media only screen and  (max-width: 617px) {
+    nav li {
+        padding: 0 1rem;
+    }
+
+    #skills ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #contact {
+        width: 60%;
+    }
+}
