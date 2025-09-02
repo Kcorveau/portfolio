@@ -29,7 +29,7 @@ article,
 }
 
 body {
-    background-image: url(/PortfolioV1/resources/Background.jpg);
+    background-image: url(Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -178,4 +178,5 @@ article p {
     #contact {
         width: 60%;
     }
+
 }
